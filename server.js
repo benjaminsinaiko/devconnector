@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -8,6 +9,9 @@ const profile = require('./routes/api/profile');
 const posts = require('./routes/api/posts');
 
 const app = express();
+
+// Test env
+console.log('env: ', process.env.ENV_TEST);
 
 // Body parser middleware
 app.use(bodyParser.urlencoded({
