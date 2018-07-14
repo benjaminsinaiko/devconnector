@@ -10,13 +10,12 @@ const posts = require('./routes/api/posts');
 
 const app = express();
 
-// Test env
-console.log('env: ', process.env.ENV_TEST);
-
 // Body parser middleware
-app.use(bodyParser.urlencoded({
-  extended: false
-}));
+app.use(
+  bodyParser.urlencoded({
+    extended: false
+  })
+);
 app.use(bodyParser.json());
 
 // DB Config
