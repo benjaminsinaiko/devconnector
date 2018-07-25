@@ -14,7 +14,6 @@ const SelectListGroup = ({ name, value, error, info, onChange, options }) => {
         className={classnames('form-control form-control-lg', {
           'is-invalid': error
         })}
-        placeholder={placeholder}
         name={name}
         value={value}
         onChange={onChange}
